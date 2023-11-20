@@ -6,10 +6,14 @@
 //
 function sayHello(name, time) {
   if (!name) {
-    return "Good morning, Unknown";
-  } else {
-    return "Good morning, ", name;
+    console.log("Good morning, Unknown");
+    return;
   }
+  if (time > 12) {
+    console.log("Good afternoon, ", name);
+    return;
+  }
+  console.log("Good morning, ", name);
 }
 
 // test cases
