@@ -5,7 +5,11 @@
 // - if time is greater than  12, it should log "Good afternoon, {name}"
 //
 function sayHello(name, time) {
-  if 
+  if (!name) {
+    return "Good morning, Unknown";
+  } else {
+    return "Good morning, ", name;
+  }
 }
 
 // test cases
